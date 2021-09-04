@@ -3,6 +3,8 @@ We propose the Nala markup, to turn a "Natural Language" sentence into a code-li
 
 关于 Nala 标注的中文介绍，请看 https://zhuanlan.zhihu.com/p/406792308 。
 
+Nala is NOT a full-scale syntactic analysis framework. We try to keep things simple.
+
 Examples for English:
 
 ```
@@ -10,7 +12,7 @@ I.love(you)                   // write SVO as S.V(O)
 
 I.agree()
 
-I.give(him, <a>pen)           // use <> for semantic "decorations" including adj / adv / ...
+I.give(him, <a>pen)           // use <> for syntactic "decorations" including adj / adv / det / ...
 
 I.have(dinner)<at home>       // use space after a preposition ("at")
 
@@ -20,7 +22,7 @@ Bob.gets(excited)<when he.watches(<action>movies)>          // use <> for clause
 
 #.Call(me, Ishmael)           // use # to denote a implied token (here # = "you")
 
-Please #.go()                 // use space for all other cases, i.e., after "Please" (here # = "you")
+Please #.go()                 // use space for other cases, i.e., after "Please" (here # = "you")
 
 What #(<a nice> day)!         // here # = "is"
 
